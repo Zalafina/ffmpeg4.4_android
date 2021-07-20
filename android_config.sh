@@ -32,4 +32,4 @@
 
 sed -i 's/HAVE_PTHREAD_CANCEL 1/HAVE_PTHREAD_CANCEL 0/g' config.h
 
-echo "The configure of FFmpeg for $CPU is completed"
+echo "The configure of FFmpeg for aarch64 is completed"
