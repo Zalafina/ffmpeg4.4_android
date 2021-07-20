@@ -27,9 +27,7 @@
     --enable-debug \
     --disable-asm \
     --extra-cflags="-DANDROID" \
-
-./ffbuild/version.sh . libavutil/ffversion.h
-
-sed -i 's/HAVE_PTHREAD_CANCEL 1/HAVE_PTHREAD_CANCEL 0/g' config.h
-
-echo "The configure of FFmpeg for aarch64 is completed"
+&& ./ffbuild/version.sh . libavutil/ffversion.h \
+&& sed -i 's/HAVE_PTHREAD_CANCEL 1/HAVE_PTHREAD_CANCEL 0/g' config.h \
+&& echo \
+&& echo -e "\033[32mThe configure of FFmpeg for aarch64 is completed\033[0m"
